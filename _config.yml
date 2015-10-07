@@ -34,7 +34,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -69,10 +69,7 @@ theme: landscape
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:leobbb/leobbb.github.io.git
-  branch: master
-  message:
-  type: git 
-  repo: git@gitcafe.com:leobbb/leobbb.git
-  branch: gitcafe-pages
   message: 
+  repo:
+    github:  git@github.com:leobbb/leobbb.github.io.git,master
+    gitcafe: git@gitcafe.com:leobbb/leobbb.git,gitcafe-pages
