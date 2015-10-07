@@ -73,3 +73,9 @@ deploy:
   repo:
     github:  git@github.com:leobbb/leobbb.github.io.git,master
     gitcafe: git@gitcafe.com:leobbb/leobbb.git,gitcafe-pages
+
+# Gererate Atom 1.0 for RSS 
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
