@@ -23,10 +23,9 @@
 
 	<!-- add by leo -->
         <% if (!index) { %>  <!-- only display in post page --> 
-	  <p> post permalink: <%- post.permalink %> . </p>
-	  <p> current url: 
+	  <p>  url:  
 	    <script >
-	      document.write(location.hostname + "<%- url_for(post.path) %>");
+	      document.write("http://" + location.hostname + "<%- url_for(post.path) %>");
 	    </script>
 	  </p>
 	<% } %>
