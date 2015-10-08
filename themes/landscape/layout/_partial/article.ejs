@@ -22,12 +22,14 @@
         <%- post.content %>
 
 	<!-- add by leo -->
-        <p> post permalink: <%- post.permalink %> . </p>
-	<p> current url: 
-	  <script >
-	    document.write(location.href);
-	  </script>
-	</p>
+        <% if (!index) { %>  <!-- only display in post page --> 
+	  <p> post permalink: <%- post.permalink %> . </p>
+	  <p> current url: 
+	    <script >
+	      document.write(location.hostname + "<%- url_for(post.path) %>");
+	    </script>
+	  </p>
+	<% } %>
 	<!-- add by leo -->
 
       <% } %>
