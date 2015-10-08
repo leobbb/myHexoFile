@@ -20,7 +20,17 @@
         <% } %>
       <% } else { %>
         <%- post.content %>
-        <p> websit url: <%- url %> ,, <%- post.permalink %> . </p>
+
+	<!-- add by leo -->
+        <p> post.permalink: <%- post.permalink %> . </p>
+	<p> url: 
+	  <script >
+	    document.write(location.href);
+	  </script>
+	</p>
+	<p id="demo"></p>
+	<!-- add by leo -->
+
       <% } %>
     </div>
     <footer class="article-footer">
