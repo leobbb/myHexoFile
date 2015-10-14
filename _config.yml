@@ -81,4 +81,5 @@ feed:
   limit: 20
 
 # disqus 
-disqus_shortname:
+disqus_shortname: yzxspace
+duoshuo_shortname: 
