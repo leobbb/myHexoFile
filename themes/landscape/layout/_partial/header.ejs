@@ -22,10 +22,10 @@
         <% if (theme.rss){ %>
           <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed"></a>
         <% } %>
-      <!--  <a id="nav-search-btn" class="nav-icon" title="Search"></a>  --> 
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a> 
       </nav>
       <div id="search-form-wrap">
-        <%- search_form({button: '&#xF002;'}) %>
+        <form class="search-form"><input type="text" id="bdcsMain" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button></form>
       </div>
     </div>
   </div>
