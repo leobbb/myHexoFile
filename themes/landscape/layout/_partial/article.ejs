@@ -21,26 +21,26 @@
       <% } else { %>
         <%- post.content %>
 
-	<!-- add by leo -->
         <% if (!index) { %>  <!-- only display in post page --> 
+	<!-- add by leo -->
 	  <p>  url:  
 	    <script >
 	      document.write("http://" + location.hostname + "<%- url_for(post.path) %>");
 	    </script>
 	  </p>
-	<% } %>
 	<!-- add by leo -->
+	<% } %>
 
       <% } %>
     </div>
     <footer class="article-footer">
       <!-- <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a> -->
       
-      <% if (post.comments && config.disqus_shortname){ %>
+      <% if (!index && post.comments && config.disqus_shortname){ %>
         <a href="<%- url_for(path)  %>#disqus_thread" class="article-comment-link">Comments</a> 
       <% } %> 
       
-      <% if (post.comments && config.duoshuo_shortname){ %> 
+      <% if (!index && post.comments && config.duoshuo_shortname){ %> 
         <a href="<%- url_for(path) %>#ds-thread" class="article-comment-link">Comments</a> 
       <% } %> 
       <%- partial('post/tag') %> 
