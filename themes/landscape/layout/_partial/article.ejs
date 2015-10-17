@@ -26,7 +26,7 @@
       <!-- <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a> -->
       <% if (!index) { %>  <!-- only display in post page --> 
 	<!-- add by leo -->
-	<p>  URL:  
+	<p>
 	  <script >
 	    document.write("http://" + location.hostname + "<%- url_for(post.path) %>");
 	  </script>
