@@ -29,3 +29,6 @@ baidu_tongji:
 
 # image URL
 qiniu_url: http://7xnlhz.com1.z0.glb.clouddn.com
+
+# play mode
+play: yes
