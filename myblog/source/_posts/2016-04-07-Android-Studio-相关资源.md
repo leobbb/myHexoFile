@@ -1,6 +1,10 @@
 title: Android Studio 相关资源 
 date: 2016-04-07 20:44:20
-tags: Android studio download 下载 镜像
+tags: 
+- Android studio
+- download
+- 下载 
+- 镜像
 ---
 
 尝试了很多次，都没有把 Android Studio 配置好，搭建一个 Android 开发环境好难啊。
