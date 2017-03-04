@@ -72,7 +72,7 @@ deploy:
   type: git
   message: 
   repo:
-##    github:  git@github.com:leobbb/leobbb.github.io.git,master
+    github:  git@github:leobbb/leobbb.github.io.git,master
     coding:  git@coding:leobbb/leobbb.git,coding-pages
 
 # Gererate Atom 1.0 for RSS 
